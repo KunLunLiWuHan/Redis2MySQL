@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xiaolun.dao.ProvinceDao">
+    <!--    public List<Province> findProvinceByName();-->
+    <select id="findProvinceByName" parameterType="String" resultType="com.xiaolun.entity.Province">
+            select * from province where name = #{name}
+        </select>
+</mapper>
